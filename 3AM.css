@@ -9,6 +9,8 @@
     /*TO DO*/
         /*Fix a bug where hovering on a mention message causes it to turn yellow*/
         /*Recolor the call background*/
+        /*Darken and round spotify listen along invites*/
+        /*Fix missing comments on some class recolor lines*/
 
 :root
 {
@@ -81,6 +83,7 @@
 
             /*call thingy*/
             --bg-overlay-app-frame: var(--bgcol);
+            
 
         /*other*/
                             
@@ -100,7 +103,7 @@
 
         /*EXTRA COLORS*/
 
-                
+                /*sorry, forgot to document what these are when i was adding them*/
                 .inspector__993e1, .scroller_e89578, .unicodeShortcut__1dd6b
                 {
                     background-color: var(--bgcol);
@@ -115,17 +118,22 @@
                     border-color: var(--accent) !important;
                     background: var(--accent);
                 }
+                /*emoji menu recolor*/
+                .contentWrapper__321ed, .header_c3c744
+                {
+                background-color: var(--bgcol);
+                }
 
                 
         /*ROUNDING*/
 
-                /*round message bar, some buttons, dm list button, new messages notif bar, channel buttons(in that order)*/
-                .scrollableContainer__33e06, .button_afdfd9, .interactive__776ee, .newMessagesBar__8b6d7, .link__95dc0
+                /*round message bar, some buttons, dm list button, new messages notif bar, channel buttons, emoji menu search bar(in that order)*/
+                .scrollableContainer__33e06, .button_afdfd9, .interactive__776ee, .newMessagesBar__8b6d7, .link__95dc0, .searchBar__8f956
                 {
                     border-radius: 25px;
                 }
-                /*round emojis seperately because they look really shitty as a circle*/
-                [data-type="emoji"]
+                /*round emojis seperately (and spotify activity icons)*/
+                [data-type="emoji"], [class*="Spotify"]
                 {
                     border-radius: 5px;
                 }
@@ -134,6 +142,7 @@
                 {
                     border-radius: 20px;
                 }
+                
 
         /*ANIMATIONS*/
 
