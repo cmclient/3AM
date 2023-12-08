@@ -58,8 +58,6 @@
             /*color of the background of mention text*/
             --mention-background: var(--accent);
 
-            --text-link: var(--linkcol);
-
         /*background based*/
         
             /*primary color, self explanatory*/
@@ -94,6 +92,9 @@
 
             /*text color of mention text*/
             --mention-foreground: white;
+
+            /*Link color*/
+            --text-link: var(--linkcol);
 }
 
 
