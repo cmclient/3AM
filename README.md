@@ -8,6 +8,7 @@
 - Minimal issues (See the to-do list in the css file)
 - Easy and simple customizability
 - Support for select discord experiments
+- Written with simplicity and understandability in mind
 
 ### Installation
 
