@@ -21,9 +21,3 @@ https://raw.githubusercontent.com/cheesesamwich/3AM/main/3AM.css
 
 #### Other Clients
 ##### Currently there is no documented supports for any other modded discord clients. I only personally use vencord- but i dont doubt that 3AM will work fine anywhere else.
-
-### To Do
-
-#### Fix a bug where hovering on a mention message causes it to turn yellow   
-#### Darken and round spotify listen along invites
-#### Fix missing comments on some class recolor lines
