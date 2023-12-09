@@ -8,7 +8,6 @@
  
     /*TO DO*/
         /*Fix a bug where hovering on a mention message causes it to turn yellow*/
-        /*Recolor the call background*/
         /*Darken and round spotify listen along invites*/
         /*Fix missing comments on some class recolor lines*/
 
@@ -122,6 +121,11 @@
                 .contentWrapper__321ed, .header_c3c744
                 {
                 background-color: var(--bgcol);
+                }
+                /*vc background recolor*/
+                .root__3eef0
+                {
+                    background-color: var(--bgcol);
                 }
 
                 
