@@ -11,6 +11,10 @@
         /*Darken and round spotify listen along invites*/
         /*Fix missing comments on some class recolor lines*/
 
+        body
+        {
+            display:initial !important;
+        }
 :root
 {
 
@@ -190,7 +194,7 @@
         /*CONTENT*/
 
                 /*Hide most of the ugly useless scrollbars*/
-                [class^='scroller']::-webkit-scrollbar 
+                ::-webkit-scrollbar 
                 {
                     display:none;
                 }
@@ -208,6 +212,11 @@
                     display: none;
                 
                 }
+                /*Remove the buttons at the bottom of the user pop out (seriously, who wanted this?)*/
+                .addFriendSection__413d3
+                {
+                display: none;
+                }
 
 
 
@@ -217,4 +226,10 @@
                 .inner__9fd0b, .button__4f306, .layout__59abc, .name__8d1ec
                 {
                    filter: drop-shadow(0px 0px 3px var(--glowcol));
+                }
+
+                /*Change the font*/
+                :root
+                {
+                --font-primary: 'Nunito' !important;
                 }
