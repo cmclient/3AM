@@ -37,3 +37,8 @@ https://raw.githubusercontent.com/cmclient/3AM/main/3AM-SF-Pro-NoServerAnimation
 
 #### Other Clients
 ##### Currently there is no documented supports for any other modded discord clients. I only personally use vencord- but i dont doubt that 3AM will work fine anywhere else.
+
+### Screenshots
+![screenshot](https://i.imgur.com/LTEWb5n.png)
+
+![screenshot](https://i.imgur.com/hERqrWz.png)
