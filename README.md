@@ -15,8 +15,24 @@
 #### Vencord
 ##### To install 3AM on Vencord, Simply navigate to settings, themes, online themes, and paste in:
 
+### Poppins Font
 ```
-https://raw.githubusercontent.com/cheesesamwich/3AM/main/3AM.css
+https://raw.githubusercontent.com/cmclient/3AM/main/3AM-Poppins.css
+```
+
+### Poppins Font (No Server Animation)
+```
+https://raw.githubusercontent.com/cmclient/3AM/main/3AM-Poppins-NoServerAnimation.css
+```
+
+### SF Pro
+```
+https://raw.githubusercontent.com/cmclient/3AM/main/3AM-SF-Pro.css
+```
+
+### SF Pro (No Server Animation)
+```
+https://raw.githubusercontent.com/cmclient/3AM/main/3AM-SF-Pro-NoServerAnimation.css
 ```
 
 #### Other Clients
