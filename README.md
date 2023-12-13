@@ -42,3 +42,5 @@ https://raw.githubusercontent.com/cmclient/3AM/main/3AM-SF-Pro-NoServerAnimation
 ![screenshot](https://i.imgur.com/LTEWb5n.png)
 
 ![screenshot](https://i.imgur.com/hERqrWz.png)
+
+img[alt=screenshot] { width: 50%; }
