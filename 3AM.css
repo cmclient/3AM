@@ -217,6 +217,12 @@
                 {
                 display: none;
                 }
+                
+                /*No more useless spotify activity header*/
+                .headerContainer__2ec4e
+                {
+                    display: none;
+                }
 
 
 
