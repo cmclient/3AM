@@ -5,7 +5,7 @@
  * @description Its 3AM. No Light, Just Night.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400,700&display=swap');
  
     /*TO DO*/
         /*Fix a bug where hovering on a mention message causes it to turn yellow*/
@@ -238,5 +238,5 @@
                 /*Change the font*/
                 :root
                 {
-                    --font-primary: 'Poppins', sans-serif !important;
+                    --font-primary: 'SF Pro', 'San Francisco', 'Helvetica Neue', sans-serif !important;
                 }
