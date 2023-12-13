@@ -25,12 +25,12 @@ https://raw.githubusercontent.com/cmclient/3AM/main/3AM-Poppins.css
 https://raw.githubusercontent.com/cmclient/3AM/main/3AM-Poppins-NoServerAnimation.css
 ```
 
-### SF Pro
+### SF Pro Font
 ```
 https://raw.githubusercontent.com/cmclient/3AM/main/3AM-SF-Pro.css
 ```
 
-### SF Pro (No Server Animation)
+### SF Pro Font (No Server Animation)
 ```
 https://raw.githubusercontent.com/cmclient/3AM/main/3AM-SF-Pro-NoServerAnimation.css
 ```
