@@ -1,0 +1,236 @@
+/**
+ * @name 3AM
+ * @author Samwich
+ * @version 1.0.0
+ * @description Its 3AM. No Light, Just Night.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+ 
+    /*TO DO*/
+        /*Fix a bug where hovering on a mention message causes it to turn yellow*/
+        /*Darken and round spotify listen along invites*/
+        /*Fix missing comments on some class recolor lines*/
+
+        body
+        {
+            display:initial !important;
+        }
+:root
+{
+
+    /*VARIABLES*/
+
+        /*editable variables. Feel free to mess around with these to your hearts content, i recommend not editing the logic variables unless you have an understanding of css*/
+
+        --accent: rgb(7, 7, 7);
+        --bgcol: rgb(0, 0, 0);
+        --animspeed: 0.3s;
+        --glowcol: rgb(51, 51, 51);
+        --mentioncol: rgb(0, 0, 0);
+        --mentionhighlightcol: rgb(0, 0, 0);
+        --linkcol: rgb(95, 231, 255);
+        
+        /*logic variables*/
+
+        --fixedanimspeed: calc(var(--animspeed) - 0.1s);
+
+
+    /*COLOR ASSIGNING  (most of these probably effect more than whats commented)*/
+
+        /*accent based*/
+
+            /*buttons*/
+            --button-secondary-background: var(--accent);
+            
+            /*also buttons*/
+            --brand-experiment: var(--accent);
+            
+            /*message bar*/
+            --channeltextarea-background: var(--accent);
+            
+            /*selected dm background*/
+            --background-modifier-selected: var(--accent);
+            
+            /*emoji autofill*/
+            --primary-630: var(--accent);
+
+            /*plugin grid square and nitro shop*/
+            --background-secondary-alt: var(--accent);
+
+            /*modal background, self explanatory*/
+            --modal-background: var(--accent);
+
+            /*color of the background of mention text*/
+            --mention-background: var(--accent);
+
+        /*background based*/
+        
+            /*primary color, self explanatory*/
+            --background-primary: var(--bgcol);
+            
+            /*dm list*/
+            --background-secondary: var(--bgcol);
+
+            /*outer frame and search background*/
+            --background-tertiary: var(--bgcol);
+
+
+            /*friends header bar*/
+            --bg-overlay-2: var(--bgcol);
+
+            /*user panel*/
+            --bg-overlay-1: var(--bgcol);
+
+            /*vc panel thing*/
+            --background-secondary-alt: var(--bgcol);
+
+            /*call thingy*/
+            --bg-overlay-app-frame: var(--bgcol);
+            
+
+        /*other*/
+                            
+            /*mention background color*/
+            --background-mentioned: var(--mentioncol);
+
+             /*mention side line color color*/
+            --info-warning-foreground: var(--mentionhighlightcol);
+
+            /*text color of mention text*/
+            --mention-foreground: white;
+
+            /*Link color*/
+            --text-link: var(--linkcol);
+}
+
+
+        /*EXTRA COLORS*/
+
+                /*sorry, forgot to document what these are when i was adding them*/
+                .inspector__993e1, .scroller_e89578, .unicodeShortcut__1dd6b
+                {
+                    background-color: var(--bgcol);
+                }
+                .inner__178b2
+                {
+                    background-color: var(--accent);
+                }
+                /*recolor embeds*/
+                [class^="embedWrap"]
+                {
+                    border-color: var(--accent) !important;
+                    background: var(--accent);
+                }
+                /*emoji menu recolor*/
+                .contentWrapper__321ed, .header_c3c744
+                {
+                background-color: var(--bgcol);
+                }
+                /*vc background recolor*/
+                .root__3eef0
+                {
+                    background-color: var(--bgcol);
+                }
+
+                
+        /*ROUNDING*/
+
+                /*round message bar, some buttons, dm list button, new messages notif bar, channel buttons, emoji menu search bar(in that order)*/
+                .scrollableContainer__33e06, .button_afdfd9, .interactive__776ee, .newMessagesBar__8b6d7, .link__95dc0, .searchBar__8f956
+                {
+                    border-radius: 25px;
+                }
+                /*round emojis seperately (and spotify activity icons)*/
+                [data-type="emoji"], [class*="Spotify"]
+                {
+                    border-radius: 5px;
+                }
+                /*round gifs and stickers (and maybe images idk lmao), and embeds*/
+                [class^="imageWr"], [data-type="sticker"], [class^="embed"]
+                {
+                    border-radius: 20px;
+                }
+                
+
+        /*ANIMATIONS*/
+
+
+                /*slightly move messages right when hovered*/
+                .cozyMessage__64ce7 {
+                    left: 0px;
+                
+                    transition-duration: 0.2s;
+                }
+                .cozyMessage__64ce7:hover {
+                    left: 3px;
+                }
+  
+                /*guild list collapse hover*/
+                .guilds__2b93a {
+                    width: 65px;
+                    opacity: 100;
+                }
+                
+                /*member list collapse hover*/
+                .container_b2ce9c {
+                    width: 60px;
+                    opacity: 0.2;
+                    transition: width var(--fixedanimspeed) ease 0.1s, opacity var(--fixedanimspeed) ease 0.1s;
+                
+                }
+                .container_b2ce9c:hover {
+                    width: 250px;
+                    opacity: 1;
+                
+                }
+
+
+        /*CONTENT*/
+
+                /*Hide most of the ugly useless scrollbars*/
+                ::-webkit-scrollbar 
+                {
+                    display:none;
+                }
+
+                /*Hide the dm favourite, dm close, support, gift buttons, the now playing column, and the channel + favourite icons*/
+                .favoriteIcon_b001ac, .closeButton__8f1fd, .a[href="https://support.discord.com"], .nowPlayingColumn-1eCBCN, button[aria-label="Send a gift"], .icon_eff5d4, .iconContainer__3f9b0
+                {
+                    display :none;
+                }
+
+                /*yeet the shitty nitro and family link tabs that no one likes*/
+                .channel_c21703[aria-posinset="2"],
+                .familyCenterLinkButton__893e2 
+                {
+                    display: none;
+                
+                }
+                /*Remove the buttons at the bottom of the user pop out (seriously, who wanted this?)*/
+                .addFriendSection__413d3
+                {
+                display: none;
+                }
+                
+                /*No more useless spotify activity header*/
+                .headerContainer__2ec4e
+                {
+                    display: none;
+                }
+
+
+
+        /*STYLING*/
+        
+                /*add a soft glow to message bar contents, user panel, dms, channel names (in that order)*/
+                .inner__9fd0b, .button__4f306, .layout__59abc, .name__8d1ec
+                {
+                   filter: drop-shadow(0px 0px 3px var(--glowcol));
+                }
+
+                /*Change the font*/
+                :root
+                {
+                    --font-primary: 'Poppins', sans-serif !important;
+                }
